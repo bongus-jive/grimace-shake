@@ -1,0 +1,13 @@
+{
+  "itemName": "pat_grimaceshake",
+  "shortdescription": "Grimace Shake",
+  "description": "Celebrate Grimace's birthday!",
+  "inventoryIcon": "grimaceshake.png",
+  "rarity": "Legendary",
+  "tooltipKind": "food",
+  "category": "drink",
+  "maxStack": 1,
+  "price": 389,
+  "effects": [["pat_grimaceshake"]],
+  "emitters" : ["drinking"]
+}

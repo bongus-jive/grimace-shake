@@ -1,0 +1,71 @@
+{
+	"sounds" : {
+		"kill" : ["/sfx/melee/fist_kill_organic.ogg"]
+	},
+	"particleEmitters" : {
+    //that's the grimace water...
+		"grimacewater" : {
+			"burstCount" : 333,
+			"offsetRegion" : [0, 0, 0, 0],
+			"particles" : [
+				{
+					"particle" : {
+						"type" : "ember",
+						"size" : 1.25,
+						"color" : "#DABDE9",
+						"initialVelocity" : [0, 15],
+						"finalVelocity" : [0, -30],
+						"approach" : [4, 12],
+						"timeToLive" : 0,
+						"collidesForeground" : true,
+						"destructionAction" : "fade",
+						"destructionTime" : 10,
+						"layer" : "front",
+						"variance" : {
+							"size" : 0.75,
+							"initialVelocity" : [40, 40]
+						}
+					}
+				},
+				{
+					"particle" : {
+						"type" : "ember",
+						"size" : 1.25,
+						"color" : "#B193C5",
+						"initialVelocity" : [0, 15],
+						"finalVelocity" : [0, -30],
+						"approach" : [4, 12],
+						"timeToLive" : 0,
+						"collidesForeground" : true,
+						"destructionAction" : "fade",
+						"destructionTime" : 10,
+						"layer" : "front",
+						"variance" : {
+							"size" : 0.75,
+							"initialVelocity" : [25, 55]
+						}
+					}
+				},
+				{
+					"particle" : {
+						"type" : "ember",
+						"size" : 1.25,
+						"color" : "#6D5684",
+						"initialVelocity" : [0, 15],
+						"finalVelocity" : [0, -30],
+						"approach" : [4, 12],
+						"timeToLive" : 0,
+						"collidesForeground" : true,
+						"destructionAction" : "fade",
+						"destructionTime" : 10,
+						"layer" : "front",
+						"variance" : {
+							"size" : 0.75,
+							"initialVelocity" : [55, 25]
+						}
+					}
+				}
+			]
+		}
+	}
+}
