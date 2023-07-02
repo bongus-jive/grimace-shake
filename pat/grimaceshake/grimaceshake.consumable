@@ -7,7 +7,7 @@
   "tooltipKind": "food",
   "category": "drink",
   "maxStack": 1,
-  "price": 389,
+  "price": 60,
   "effects": [["pat_grimaceshake"]],
   "emitters" : ["drinking"]
 }
