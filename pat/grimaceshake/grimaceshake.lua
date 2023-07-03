@@ -16,8 +16,17 @@ function update(dt)
       animator.setParticleEmitterOffsetRegion("grimacewater", mcontroller.boundBox())
 			animator.burstParticleEmitter("grimacewater")
 			animator.playSound("kill")
+      
+      local targets = world.entityQuery(
+        entity.position(),
+        effect.getParameter("spreadRadius"),
+        {withoutEntityId = entity.id(), includedTypes = {"creature"}}
+      )
+      for _,id in pairs(targets) do
+        world.sendEntityMessage(id, "applyStatusEffect", "pat_grimaceshake")
+      end
 		end
 	else
-		effect.addStatModifierGroup{{stat = "invisible", amount = 1}, {stat = "maxHealth", effectiveMultiplier = 0}}
+    effect.addStatModifierGroup{{stat = "invisible", amount = 1}, {stat = "maxHealth", effectiveMultiplier = 0}}
 	end
 end

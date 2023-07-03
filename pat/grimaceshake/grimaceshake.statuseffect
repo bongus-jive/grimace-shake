@@ -2,9 +2,13 @@
   "name" : "pat_grimaceshake",
   "defaultDuration" : 15,
   "effectConfig" : {
-    "timerRange" : [3, 7.5],
-    "directives" : "fade=552982="
+    "timerRange" : [2, 6],
+    "directives" : "fade=552982=",
+    "spreadRadius" : 12
   },
 	"animationConfig" : "grimaceshake.animation",
-  "scripts" : ["grimaceshake.lua"]
+  "scripts" : ["grimaceshake.lua"],
+
+  "label" : "Grimace",
+  "icon" : "/pat/grimaceshake/grimaceshake.png"
 }
